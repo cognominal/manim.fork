@@ -1,0 +1,19 @@
+{
+  "name": "manimts-sv",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "check:core": "tsc -p packages/core-ts/tsconfig.json",
+    "check:render-node": "tsc -p packages/render-node/tsconfig.json",
+    "gen:basic-mp4": "bun run examples/generate-basic-mp4.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "typescript": "^5.9.2"
+  }
+}
