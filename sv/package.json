@@ -10,7 +10,16 @@
   "scripts": {
     "check:core": "tsc -p packages/core-ts/tsconfig.json",
     "check:render-node": "tsc -p packages/render-node/tsconfig.json",
-    "gen:basic-mp4": "bun run examples/generate-basic-mp4.ts"
+    "gen:basic-mp4": "bun run examples/generate-basic-mp4.ts",
+    "port:pentomino_6x10": "bun run examples/pentomanim-port/pentomino_6x10.ts",
+    "port:pentomino_6x10_five": "bun run examples/pentomanim-port/pentomino_6x10_five.ts",
+    "port:rect_6x10_dfs_tree": "bun run examples/pentomanim-port/rect_6x10_dfs_tree.ts",
+    "port:triplication_dfs_tree": "bun run examples/pentomanim-port/triplication_dfs_tree.ts",
+    "port:sync_eponymous": "bun run tools/sync-eponymous.ts",
+    "gen:pentomino_6x10-mp4": "bun run examples/pentomanim-port/generate-pentomino_6x10-mp4.ts",
+    "gen:pentomino_6x10_five-mp4": "bun run examples/pentomanim-port/generate-pentomino_6x10_five-mp4.ts",
+    "gen:rect_6x10_dfs_tree-mp4": "bun run examples/pentomanim-port/generate-rect_6x10_dfs_tree-mp4.ts",
+    "gen:triplication_dfs_tree-mp4": "bun run examples/pentomanim-port/generate-triplication_dfs_tree-mp4.ts"
   },
   "devDependencies": {
     "@types/node": "^24.3.0",
