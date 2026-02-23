@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="640"
+  height="360" viewBox="0 0 640 360" role="img"
+  aria-labelledby="title">
+  <title id="title">Simple fixture scene</title>
+  <metadata>
+    {"sceneId":"simple-scene","origin":"gen-simple-svg"}
+  </metadata>
+  <g id="scene-root" data-node-id="scene-root"
+    data-origin="simple-scene">
+    <rect id="rect-1" data-node-id="rect-1" x="160" y="110"
+      width="320" height="140" rx="14" fill="#f8fafc"
+      stroke="#0f172a" stroke-width="3" />
+    <text id="text-1" data-node-id="text-1" x="320" y="190"
+      text-anchor="middle" font-size="28"
+      font-family="Iosevka Aile, IBM Plex Sans, sans-serif"
+      fill="#0f172a">Hello</text>
+  </g>
+</svg>

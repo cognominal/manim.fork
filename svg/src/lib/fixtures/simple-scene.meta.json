@@ -1,0 +1,27 @@
+{
+  "sceneId": "simple-scene",
+  "width": 640,
+  "height": 360,
+  "viewBox": "0 0 640 360",
+  "nodeCount": 3,
+  "nodes": [
+    {
+      "id": "scene-root",
+      "tag": "g",
+      "label": "g#scene-root",
+      "parentId": null
+    },
+    {
+      "id": "rect-1",
+      "tag": "rect",
+      "label": "rect#rect-1",
+      "parentId": "scene-root"
+    },
+    {
+      "id": "text-1",
+      "tag": "text",
+      "label": "text#text-1",
+      "parentId": "scene-root"
+    }
+  ]
+}
