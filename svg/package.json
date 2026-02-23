@@ -1,0 +1,35 @@
+{
+  "name": "manim-svg-studio",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "gen:fixture": "bun ../scripts/gen-simple-svg.ts",
+    "test:unit": "bun test tests/unit",
+    "test:e2e": "playwright test",
+    "test": "bun run test:unit && bun run test:e2e",
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "lint": "bun run check"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@sveltejs/vite-plugin-svelte": "^6.0.0",
+    "@tsconfig/svelte": "^5.0.5",
+    "@xmldom/xmldom": "^0.8.11",
+    "svelte": "^5.0.0",
+    "svelte-check": "^4.0.0",
+    "typescript": "^5.9.2",
+    "vite": "^7.0.0"
+  },
+  "dependencies": {
+    "@codemirror/commands": "^6.10.2",
+    "@codemirror/lang-xml": "^6.1.0",
+    "@codemirror/language": "^6.12.1",
+    "@codemirror/state": "^6.5.4",
+    "@codemirror/view": "^6.39.15",
+    "@rich_harris/svelte-split-pane": "^3.0.0"
+  }
+}
