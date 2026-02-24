@@ -10,16 +10,27 @@
   "scripts": {
     "check:core": "tsc -p packages/core-ts/tsconfig.json",
     "check:render-node": "tsc -p packages/render-node/tsconfig.json",
+    "export:svg": "bun run tools/export-scene-svg.ts",
+    "export:svg:default": "bun run tools/export-scene-svg.ts --scene sv/examples/svg-link/simple-scene.ts",
     "gen:basic-mp4": "bun run examples/generate-basic-mp4.ts",
     "port:pentomino_6x10": "bun run examples/pentomanim-port/pentomino_6x10.ts",
     "port:pentomino_6x10_five": "bun run examples/pentomanim-port/pentomino_6x10_five.ts",
     "port:rect_6x10_dfs_tree": "bun run examples/pentomanim-port/rect_6x10_dfs_tree.ts",
     "port:triplication_dfs_tree": "bun run examples/pentomanim-port/triplication_dfs_tree.ts",
+    "port:dancing_links": "bun run examples/pentomanim-port/dancing_links.ts",
+    "port:dancing-links-anim": "bun run examples/pentomanim-port/dancing-links-anim.ts",
+    "port:dlx_3x2_two_tiles": "bun run examples/pentomanim-port/dlx_3x2_two_tiles.ts",
+    "port:dlx_3x2_three_tiles": "bun run examples/pentomanim-port/dlx_3x2_three_tiles.ts",
+    "port:dlx_3x2_three_tiles_links": "bun run examples/pentomanim-port/dlx_3x2_three_tiles_links.ts",
     "port:sync_eponymous": "bun run tools/sync-eponymous.ts",
     "gen:pentomino_6x10-mp4": "bun run examples/pentomanim-port/generate-pentomino_6x10-mp4.ts",
     "gen:pentomino_6x10_five-mp4": "bun run examples/pentomanim-port/generate-pentomino_6x10_five-mp4.ts",
     "gen:rect_6x10_dfs_tree-mp4": "bun run examples/pentomanim-port/generate-rect_6x10_dfs_tree-mp4.ts",
-    "gen:triplication_dfs_tree-mp4": "bun run examples/pentomanim-port/generate-triplication_dfs_tree-mp4.ts"
+    "gen:triplication_dfs_tree-mp4": "bun run examples/pentomanim-port/generate-triplication_dfs_tree-mp4.ts",
+    "gen:dancing-links-anim-mp4": "bun run examples/pentomanim-port/generate-dancing-links-anim-mp4.ts",
+    "gen:dlx_3x2_two_tiles-mp4": "bun run examples/pentomanim-port/generate-dlx_3x2_two_tiles-mp4.ts",
+    "gen:dlx_3x2_three_tiles-mp4": "bun run examples/pentomanim-port/generate-dlx_3x2_three_tiles-mp4.ts",
+    "gen:dlx_3x2_three_tiles_links-mp4": "bun run examples/pentomanim-port/generate-dlx_3x2_three_tiles_links-mp4.ts"
   },
   "devDependencies": {
     "@types/node": "^24.3.0",
