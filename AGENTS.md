@@ -71,3 +71,8 @@
   - `cd sv && bun run gen:basic-mp4`
   - Output file:
     `/Users/cog/mine/manim.fork/sv/output/basic-scene.mp4`
+
+## md files
+
+Line length should be less than 80 characters
+Also be conformant to <https://google.github.io/styleguide/docguide/style.md>

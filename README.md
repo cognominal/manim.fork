@@ -2,8 +2,15 @@
 
 TBD : rename this repo into iManim.
 
-This is the boostrapping of an experiment. The idea : If in addition to being
-script based, it could be studio based as a svelte 5 app with an studio editor
+This is the boostrapping of an experiment using codex to create iManim. 
+iManin stands for interactive Manim. Manim scripts would be written 
+in ts.
+
+
+
+The idea : If in addition to being
+script based, manim scripting could be studio based as a svelte 5 app
+with an studio editor
 kind of like inkscape. It meant the language would have to be typescript. So I
 ported manim (or whatever subset, I don't know yet anything about manim) to ts
 in minutes using codex.
@@ -25,7 +32,8 @@ Manim, originally created by Grant Sanderson for the YouTube channel 3Blue1Brown
 uses SVG as its primary bridge between static design and programmatic motion.
 
 1. How Manim Sees SVG
-In Manim, an SVG is not just an image; it is a collection of VMobjects (Vectorized Mobjects).
+In Manim, an SVG is not just an image; it is a collection of VMobjects
+(Vectorized Mobjects).
 
 When you import an SVG into Manim, the engine parses the XML code
 and converts every path, circle, and polygon
@@ -53,7 +61,7 @@ The choice of name is bad but they are short so for now we stick with that.
 
 ## `sv/` quick links
 
-- Workspace README:
+* Workspace README:
   [sv/README.md](/Users/cog/mine/manim.fork/sv/README.md)
-- Port scope note:
+* Port scope note:
   [sv/examples/PENTOMANIM_PORT_SCOPE.md](/Users/cog/mine/manim.fork/sv/examples/PENTOMANIM_PORT_SCOPE.md)

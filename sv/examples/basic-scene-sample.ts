@@ -6,6 +6,7 @@ import {
   type SceneFrame,
 } from "../packages/core-ts/src/index";
 
+// Build a minimal snapshot with a configurable x-position.
 function snapshotAtX(id: string, x: number): MobjectSnapshot {
   return {
     id,
@@ -27,15 +28,18 @@ function snapshotAtX(id: string, x: number): MobjectSnapshot {
   };
 }
 
+// Keep console output compact and stable for quick sample inspection.
 function summarize(frame: SceneFrame): string {
   const pos = frame.mobjects[0]?.transform.position;
   return `t=${frame.time.toFixed(2)} x=${(pos?.x ?? 0).toFixed(2)}`;
 }
 
 async function main(): Promise<void> {
+  // Seed the scene with one dot located at x = 0.
   const dot = new BaseMobject(snapshotAtX("dot", 0));
   const scene = new BasicScene([dot]);
 
+  // Animate the dot from x = 0 to x = 10 over 2 seconds.
   const moveRight = new BasicAnimation({
     id: "move-right",
     duration: 2,
@@ -54,9 +58,11 @@ async function main(): Promise<void> {
     },
   });
 
+  // Run the animation, then hold the final state for 1 second.
   await scene.play(moveRight);
   await scene.wait(1);
 
+  // Sample frames before, during, and after the motion.
   const samples = [0, 0.5, 1, 2, 3];
   for (const t of samples) {
     const frame = scene.sample(t);
@@ -64,4 +70,5 @@ async function main(): Promise<void> {
   }
 }
 
+// Execute the example without awaiting at the top level.
 void main();
